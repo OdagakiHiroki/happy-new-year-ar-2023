@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 2023</title>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded arjs>
+
+    <a-assets>
+      <a-asset-item id="gakky" src="./assets/block.glb"></a-asset-item>
+    </a-assets>
+    <a-marker preset="hiro">
+      <!-- <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#111">
+        <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
+        </a-animation>
+      </a-sphere> -->
+      <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="#gakky"></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+
+
+    <!-- 3DCGモデルを読み込む -->
+    <!-- <a-assets>
+      <a-asset-item id="gakky" src="./assets/gakky.glb"></a-asset-item>
+    </a-assets> -->
+    <!-- マーカーを読み込む -->
+    <!-- <a-marker preset="hiro"> -->
+    <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+    <!-- <a-entity position="0 0 0" scale="0.05 0.05 0.05"
+        gltf-model="#gakky"></a-entity>
+    </a-marker> -->
+    <!-- <a-entity camera></a-entity> -->
+  </a-scene>
+</body>
+
+</html>
