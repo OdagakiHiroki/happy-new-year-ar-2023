@@ -16,12 +16,10 @@
     <a-assets>
       <a-asset-item id="gakky" src="./assets/block.glb"></a-asset-item>
     </a-assets>
-    <a-marker preset="hiro">
-      <!-- <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#111">
-        <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
-        </a-animation>
-      </a-sphere> -->
-      <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="#gakky"></a-entity>
+    <!-- マーカーの.pattファイルを読み込む -->
+    <a-marker type="pattern" url="./assets/pattern-QR.patt">
+      <!-- 3Dモデルを呼び出す -->
+      <a-entity gltf-model="#gakky"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
 
