@@ -11,13 +11,13 @@
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-  <a-scene embedded arjs>
+  <a-scene embedded arjs renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
     <!-- マーカーの.pattファイルを読み込む -->
     <!-- <a-marker type="pattern" url="./assets/pattern-1KB.patt"> -->
     <a-marker preset="hiro">
       <!-- 3Dモデルを呼び出す -->
       <!-- <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#f00"></a-sphere> -->
-      <a-entity gltf-model="https://odagakihiroki.github.io/happy-new-year-ar-2023/src/assets/gakky.glb" scale="1 1 1" position="0 -1 0" ></a-entity>
+      <a-entity gltf-model="https://odagakihiroki.github.io/happy-new-year-ar-2023/src/assets/odangogaki.glb" scale="0.1 0.1 0.1" position="0 0 0" rotation="-90 0 0"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
